@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Cafe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Add a New Cafe</h1>
+        
+        <form method="POST">
+            <div class="form-group">
+                <label for="name">Cafe Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="map_url">Map URL</label>
+                <input type="url" class="form-control" id="map_url" name="map_url" required>
+            </div>
+
+            <div class="form-group">
+                <label for="img_url">Image URL</label>
+                <input type="url" class="form-control" id="img_url" name="img_url" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="seats">Seats</label>
+                <input type="text" class="form-control" id="seats" name="seats">
+            </div>
+
+            <div class="form-group">
+                <label for="coffee_price">Coffee Price</label>
+                <input type="text" class="form-control" id="coffee_price" name="coffee_price">
+            </div>
+
+            <div class="form-group">
+                <label>Has Wifi?</label><br>
+                <input type="radio" id="wifi_yes" name="has_wifi" value="yes" required>
+                <label for="wifi_yes">Yes</label>
+                <input type="radio" id="wifi_no" name="has_wifi" value="no">
+                <label for="wifi_no">No</label>
+            </div>
+
+            <div class="form-group">
+                <label>Has Sockets?</label><br>
+                <input type="radio" id="sockets_yes" name="has_sockets" value="yes" required>
+                <label for="sockets_yes">Yes</label>
+                <input type="radio" id="sockets_no" name="has_sockets" value="no">
+                <label for="sockets_no">No</label>
+            </div>
+
+            <div class="form-group">
+                <label>Has Toilet?</label><br>
+                <input type="radio" id="toilet_yes" name="has_toilet" value="yes" required>
+                <label for="toilet_yes">Yes</label>
+                <input type="radio" id="toilet_no" name="has_toilet" value="no">
+                <label for="toilet_no">No</label>
+            </div>
+
+            <div class="form-group">
+                <label>Can Take Calls?</label><br>
+                <input type="radio" id="calls_yes" name="can_take_calls" value="yes" required>
+                <label for="calls_yes">Yes</label>
+                <input type="radio" id="calls_no" name="can_take_calls" value="no">
+                <label for="calls_no">No</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Cafe</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
